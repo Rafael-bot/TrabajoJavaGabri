@@ -7,7 +7,7 @@ import java.awt.Graphics;
 public class TestCanvas extends Canvas{
 	
 	public TestCanvas() {
-		setBackground(Color.gray);//Con el setBackground le metemos el color al fondo del jframe
+		setBackground(Color.black);//Con el setBackground le metemos el color al fondo del jframe
 	}
 
 	@Override
@@ -17,10 +17,17 @@ public class TestCanvas extends Canvas{
 		g.fillRect(10, 10, 30, 50);//x, y, width, height        en px
 		
 		g.setColor(Color.GREEN);//Color del borde
-		g.drawRect(30, 20, 50, 100);//con draw definimos el borde de la figura
+		g.drawRect(10, 10, 30, 50);//con draw definimos el borde de la figura	x, y, width, height
 	
+		g.setColor(Color.PINK);
+		g.fillOval(60, 10, 30, 50);
+		
 		g.setColor(Color.blue);
-		g.drawString("Hola mundo", 200, 200);
+		g.drawOval(60, 10, 30, 50);
+		
+		
+		g.setColor(Color.blue);//Color del borde
+		g.drawString("Hola mundo", 20, 100);//Texto, x y y
 	}
 	
 	
