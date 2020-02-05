@@ -4,7 +4,7 @@ public class TestMain {
 
 	public static void main(String[] args) {
 		
-		new TestVent();
+		new TestVent();//Llamamos a la funcion donde se define la ventana
 
 	}
 
